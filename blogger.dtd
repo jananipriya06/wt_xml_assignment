@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT knowledgespace (blogger+)>
+<!ELEMENT blogger (name,email,job,phn_no,no_of_posts)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT email (#PCDATA)>
+<!ELEMENT job (#PCDATA)>
+<!ELEMENT phn_no (#PCDATA)>
+<!ELEMENT no_of_posts (#PCDATA)>
+<!ATTLIST blogger bid ID #REQUIRED>

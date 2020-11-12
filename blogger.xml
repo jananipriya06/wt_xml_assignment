@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="blogger.xsl" type="text/xsl" ?>
+<knowledgespace>
+<blogger bid="1">
+  <name>Janani</name>
+  <email>tjananiprya2000@gmail.com</email>
+  <job>Developer</job>
+  <phn_no> 8526765042</phn_no>
+  <no_of_posts> 6 </no_of_posts>
+</blogger>
+<blogger bid="2">
+  <name>Priya</name>
+  <email>jananipriya@student.tce.edu</email>
+  <job>Student</job>
+  <phn_no> 9080861417</phn_no>
+  <no_of_posts> 10 </no_of_posts>
+</blogger>
+<blogger bid="3">
+  <name>Yashika</name>
+  <email>yasi6@gmail.com</email>
+  <job>Student</job>
+  <phn_no> 9563723456</phn_no>
+  <no_of_posts> 7 </no_of_posts>
+</blogger>
+<blogger bid="4">
+  <name>Tiana</name>
+  <email>tiana2001@gmail.com</email>
+  <job>Student</job>
+  <phn_no> 9333628492 </phn_no>
+  <no_of_posts> 3 </no_of_posts>
+</blogger>
+</knowledgespace>

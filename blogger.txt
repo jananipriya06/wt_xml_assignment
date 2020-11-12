@@ -1,0 +1,39 @@
+{
+      "blogger": [
+        {
+          "@bid": "1",
+          "name": "Janani",
+          "email": "tjananipriya2000@gmail.com",
+          "job": "Developer",
+          "phn_no": "8526765042",
+          "no_of_posts": "6"
+        },
+        {
+          "@bid": "2",
+          "name": "Priya",
+          "email": "jananipriya@student",
+          "job": "Student",
+          "phn_no": "9080861417",
+          "no_of_posts": "10"
+        },
+		{
+          "@bid": "3",
+          "name": "Yashika",
+          "email": "yasi6@gmail",
+          "job": "Student",
+          "phn_no": "9563723456",
+          "no_of_posts": "7"
+        },
+		{
+          "@bid": "4",
+          "name": "Tiana",
+          "email": "tiana2001@gmail",
+          "job": "Student",
+          "phn_no": "9333628492",
+          "no_of_posts": "3"
+        }
+        
+      ]
+    
+  }
+  

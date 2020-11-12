@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!ELEMENT blogpost (post+)>
+<!ELEMENT post (topic,date,title,content,reference)>
+<!ELEMENT topic (#PCDATA)>
+<!ELEMENT date (#PCDATA)>
+<!ELEMENT title (#PCDATA)>
+<!ELEMENT content (#PCDATA)>
+<!ELEMENT reference (#PCDATA)>
+<!ATTLIST post pid ID #REQUIRED>

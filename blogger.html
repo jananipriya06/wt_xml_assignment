@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<title>Knowledge space</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+.body {font-family:Open Sans;background-color:#ccff99}
+.navbar {overflow:hidden;width:100%;background-color:black;display:inline-block}
+.navicon{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0;white-space:normal}
+.grid{background-color:#ccff99}
+.block{width:100%;height=100px;background-color:#ccff99}
+.hr{border: 20px solid green; border-radius: 5px}
+.imgtext{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%);padding:12px 24px !imporatant}
+.replyb{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:#66cc00;text-align:center;cursor:pointer;white-space:nowrap}
+}
+
+</style>
+
+<body style="background-color:#ccff99">
+
+<!-- Navigation bar -->
+<div class="navbar"style = "background-color:#66cc00">
+  <a href="#" class= "navicon"><i class="fa fa-facebook-official"></i></a>
+  <a href="#" class= "navicon"><i class="fa fa-instagram"></i></a>
+  <a href="#" class= "navicon"><i class="fa fa-snapchat"></i></a>
+  <a href="#" class= "navicon"><i class="fa fa-flickr"></i></a>
+  <a href="#" class= "navicon"><i class="fa fa-twitter"></i></a>
+  <a href="#" class= "navicon"><i class="fa fa-linkedin"></i></a>
+</div>
+  
+  <header style="text-align:center;padding-top:48px;padding-bottom:48px">
+    <h1 style="test-align:center;font-size:48px"><b>Knowledge space</b></h1>
+    <h6 style="background-color:#66cc00;display:inline-block;padding-left:8px;padding-right:8px;text-align:center">Techie's world</h6>
+  </header>
+<hr>
+  
+ <h3>Blogger details</h3>
+<div id="demo"></div>
+<br>
+
+ <h3>Blogger details using JSON.stringify()</h3>
+<div id="demo1"></div>
+
+<script>
+var  i, x = "";
+var xmlhttp = new XMLHttpRequest();
+xmlhttp.onreadystatechange = function() {
+  if (this.readyState == 4 && this.status == 200) {
+    var myObj = JSON.parse(this.responseText);
+	x += "<table border='1'><th>Name</th><th>email</th><th>phone number</th><th>no. of posts</th>"
+    for (i in myObj.blogger) {
+  x += "<tr><td>" + myObj.blogger[i].name + "</td><td>" + myObj.blogger[i].email + "</td><td>" + myObj.blogger[i].phn_no + "</td><td>" + myObj.blogger[i].no_of_posts + "</td></tr>";
+}
+x += "</table>"
+document.getElementById("demo").innerHTML = x;
+var text = JSON.stringify(myObj, function (key, value) {
+  if (key == "name") {
+    return value.toUpperCase();
+  } else {
+    return value;
+  }
+});
+document.getElementById("demo1").innerHTML = text;
+  }
+};
+xmlhttp.open("GET", "blogger.txt", true);
+xmlhttp.send();
+
+</script>
+
+<footer style="padding:32px;background-color:#66cc00">
+  <p><strong>created by: Janani Priya.T</strong></p>
+  <p>demostration of JSON.parse() and JSON.stringify()</p>
+</footer>
+
+</body>
+</html>

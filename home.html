@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html>
+<title>Knowledge space</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open Sans">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+h1,h2,h3,h4,h5,h6 {font-family: "Oswald"}
+.body {font-family:Open Sans;background-color:#ccff99}
+.navbar {overflow:hidden;width:100%;background-color:black;display:inline-block}
+.navicon{padding:8px 16px;float:left;width:auto;border:none;display:block;outline:0;white-space:normal}
+.grid{background-color:#ccff99}
+.block{width:100%;height=100px;background-color:#ccff99}
+.hr{border: 20px solid green; border-radius: 5px}
+.imgtext{position:absolute;top:50%;left:0%;transform:translate(0%,-50%);-ms-transform:translate(-0%,-50%);padding:12px 24px !imporatant}
+.replyb{border:none;display:inline-block;padding:8px 16px;vertical-align:middle;overflow:hidden;text-decoration:none;color:inherit;background-color:#66cc00;text-align:center;cursor:pointer;white-space:nowrap}
+}
+
+</style>
+<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.3.9/angular.min.js"></script>
+    <script type="text/javascript">
+            var application = angular.module('myApp', []); 
+      
+            application.factory('random', function() { 
+                var randomObject = {}; 
+                var number = Math.floor(Math.random() * 100); 
+                randomObject.generate = function() { 
+                    return number; 
+                }; 
+                return randomObject; 
+            }); 
+            
+            application.controller('thisapp', function($scope, random) { 
+                $scope.generateRandom = function() { 
+                    $scope.randomNumber = random.generate(); 
+                }; 
+            }); 
+        </script>
+<body style="background-color:#ccff99">
+
+<!-- Navigation bar -->
+<div class="navbar"style = "background-color:#66cc00">
+  <a href="#" class= "navicon"><i class="fa fa-facebook-official"></i></a>
+  <a href="#" class= "navicon"><i class="fa fa-instagram"></i></a>
+  <a href="#" class= "navicon"><i class="fa fa-snapchat"></i></a>
+  <a href="#" class= "navicon"><i class="fa fa-flickr"></i></a>
+  <a href="#" class= "navicon"><i class="fa fa-twitter"></i></a>
+  <a href="#" class= "navicon"><i class="fa fa-linkedin"></i></a>
+</div>
+  
+
+<div style="max-width:100%;">
+
+  <!-- Header -->
+  <header style="text-align:center;padding-top:48px;padding-bottom:48px">
+    <h1 style="test-align:center;font-size:48px"><b>Knowledge space</b></h1>
+    <h6 style="background-color:#66cc00;display:inline-block;padding-left:8px;padding-right:8px;text-align:center">Techie's world</h6>
+  </header>
+
+<!-- Image header -->
+  <header style="position:relative;letter-spacing:4px" id="home">
+    <img src="download.jpg" alt="Kmowlege img" width="100%" height="auto">
+    <div class="imgtext">
+      <h1  style="font-size:64px ;text-shadow: 5px 5px black ; color:white"><b>Gaining knowledge is the first step to wisdom,<br>Sharing it is the first step to humanity</b></h1>
+    </div>
+  </header>
+ 
+
+  <div class="grid" style="background-color:#ccff99 width="100%">
+
+  
+    <div  style="background-color:white">
+    	
+
+      <div style="background-color:white>
+        <div style="text-align:center">
+          <h3 id="demo1"></h3>
+          <h5 id="demo2"></h5>
+        </div>
+
+        <div style="text-align:justify">
+          <p id="demo3"><strong></strong>  </p>
+<br>
+<p id="demo4"> </p>
+<p id="demo5"> </p>
+
+          <p style="float:left"><button class="replyb" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+		  <p style="float:right"><button class="replyb" onclick="myFunction('rep1')" id="myBtn"><b>Replies  1</b> </button></p>
+          <p class="w3-clear"></p>
+          <div class="w3-row w3-margin-bottom" id="rep1" style="display:none">
+            <hr>
+   
+              <div class="w3-col l10 m9">
+			  <i class="fa fa-user"></i> <h4>George <span class="w3-opacity w3-medium">Oct 3, 2020, 6:32 PM</span></h4>
+                <p>Cool tip....</p>
+              </div>
+          </div>
+        </div>
+ 
+	 
+	 
+
+	  	  
+<div  style="width:100%;background-color:#ccff99;text-align:center;color:#ccff99">break</div>
+	  
+
+  
+      <div style="background-color:white!importatnt>
+        <div style="text-align:center">
+          <h3 id="demo6"></h3>
+          <h5 id="demo7"></h5>
+        </div>
+
+        <div style="text-align:justify">
+          <p id="demo8"><strong></strong>  </p>
+<br>
+<p id="demo9"> </p>
+<p id="demo10"> </p>
+          <p style="float:left"><button class="replyb" onclick="likeFunction(this)"><b><i class="fa fa-thumbs-up"></i> Like</b></button></p>
+		  
+		  <p style="float:right"><button class="replyb" onclick="myFunction('rep')" id="myBtn"><b>Replies  2</b> </button></p>
+
+		  <p class="w3-clear"></p>
+          
+         
+          <div id="rep" style="display:none">
+            <div class="w3-row">
+              <hr>
+              
+              <div class="w3-col l10 m9">
+                <i class="fa fa-user"></i> <h4>Amber <span class="w3-opacity w3-medium">April 26, 2020, 10:52 PM</span></h4>
+                <p>Python is the best</p><br>
+              </div>
+            </div>
+            <div class="w3-row w3-margin-bottom">
+              
+              <div class="w3-col l10 m9">
+                <i class="fa fa-user"></i> <h4>Angie <span class="w3-opacity w3-medium">April 23, 2020, 9:12 PM</span></h4>
+                <p>Wow :)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+	  
+
+ <div style="float:center;test-align:center" ng-app="myApp" ng-controller="thisapp"> 
+    
+          <p style="float:right;test-align:center"><button class="replyb" style="background-color:#ccff99" ng-click="generateRandom()"><b>Online Viewers  </b> <span class="w3-tag w3-white">{{randomNumber}}</span></button></p>
+          </div>
+      
+   
+    </div>
+ 
+  </div>
+
+</div>
+
+
+<footer style="padding:32px;background-color:#66cc00">
+  <p><strong>created by: Janani Priya.T</strong></p>
+  
+  <p>demostration of DOMParser</p>
+  
+  <p><strong></strong></p>
+  
+  
+  
+   <p><a href="blogger.html">Click here to view our bloggers</a></p>
+</footer>
+
+<script>
+var text, parser, xmlDoc;
+
+text = "<blogpost><post>"+
+"<post>"+
+  "<topic>Python tricks</topic>"+
+  "<date>Oct 1, 2020</date>"+
+  "<title>Python code runs faster in a function!</title>"+
+  "<content> It's better to write your code within functions, although the procedural code is supported in Python.It is faster to store local variables than globals because of the underlying Cpython implementation which makes functions run faster </content>"+
+  "<reference> Reference : https://www.tutorialspoint.com/Why-does-Python-code-run-faster-in-a-function </reference>"+
+"</post>"+
+"<post>"+
+  "<topic>Python tricks</topic>"+
+  "<date>April 23, 2020</date>"+
+  "<title>Transpose of a matrix in single line in python</title>"+
+  "<content> Python provides interesting way to find the transpose of a matrix using zip() method .Matrix is represented as a nested list. Zip returns an iterator of tuples, where the i-th tuple contains the i-th element from each of the argument sequences or iterables. </content>"+
+  "<reference> Reference : https://www.geeksforgeeks.org/transpose-matrix-single-line-python/</reference>"+
+"</post>"+
+"</post></blogpost>";
+
+parser = new DOMParser();
+xmlDoc = parser.parseFromString(text,"text/xml");
+
+document.getElementById("demo1").innerHTML =
+xmlDoc.getElementsByTagName("topic")[0].childNodes[0].nodeValue;
+document.getElementById("demo2").innerHTML =
+xmlDoc.getElementsByTagName("date")[0].childNodes[0].nodeValue;
+document.getElementById("demo3").innerHTML =
+xmlDoc.getElementsByTagName("title")[0].childNodes[0].nodeValue;
+document.getElementById("demo4").innerHTML =
+xmlDoc.getElementsByTagName("content")[0].childNodes[0].nodeValue;
+document.getElementById("demo5").innerHTML =
+xmlDoc.getElementsByTagName("reference")[0].childNodes[0].nodeValue;
+
+document.getElementById("demo6").innerHTML =
+xmlDoc.getElementsByTagName("topic")[1].childNodes[0].nodeValue;
+document.getElementById("demo7").innerHTML =
+xmlDoc.getElementsByTagName("date")[1].childNodes[0].nodeValue;
+document.getElementById("demo8").innerHTML =
+xmlDoc.getElementsByTagName("title")[1].childNodes[0].nodeValue;
+document.getElementById("demo9").innerHTML =
+xmlDoc.getElementsByTagName("content")[1].childNodes[0].nodeValue;
+document.getElementById("demo10").innerHTML =
+xmlDoc.getElementsByTagName("reference")[1].childNodes[0].nodeValue;
+</script>
+
+<script>
+
+document.getElementById("myBtn").click();
+function myFunction(id) {
+  var x = document.getElementById(id);
+  if (x.className.indexOf("w3-show") == -1) {
+    x.className += " w3-show";
+  } else { 
+    x.className = x.className.replace(" w3-show", "");
+  }
+}
+
+function likeFunction(x) {
+  x.style.fontWeight = "bold";
+  x.innerHTML = "✓ Liked";
+}
+</script>
+
+</body>
+</html>

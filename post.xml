@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet href="post.xsl" type="text/xsl" ?>
+<blogpost>
+<post pid="1">
+  <topic>Python tricks</topic>
+  <date>Oct 1, 2020</date>
+  <title>Python code runs faster in a function!</title>
+  <content> It's better to write your code within functions, although the procedural code is supported in Python.
+  It is faster to store local variables than globals because of the underlying Cpython implementation which makes functions run faster </content>
+  <reference> Reference : https://www.tutorialspoint.com/Why-does-Python-code-run-faster-in-a-function </reference>
+</post>
+<post pid="2">
+  <topic>Python tricks</topic>
+  <date>April 23, 2020</date>
+  <title>Transpose of a matrix in single line in python</title>
+  <content> Python provides interesting way to find the transpose of a matrix using zip() method .
+  Matrix is represented as a nested list. 
+  Zip returns an iterator of tuples, where the i-th tuple contains the i-th element from each of the argument sequences or iterables. </content>
+  <reference> Reference : https://www.geeksforgeeks.org/transpose-matrix-single-line-python/</reference>
+</post>
+</blogpost>
